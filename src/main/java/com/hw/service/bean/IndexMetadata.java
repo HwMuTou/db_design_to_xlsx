@@ -18,7 +18,7 @@ import java.sql.SQLException;
 @Data
 public class IndexMetadata {
 	private final String name;
-	private final String column_name;
+	private final String columnName;
 	private final String type;
 	private final String unique;
 
@@ -26,6 +26,6 @@ public class IndexMetadata {
 		name = rs.getString("INDEX_NAME");
 		type = rs.getString("type");
 		unique = rs.getString("non_unique");
-		column_name = rs.getString("column_name");
+		columnName = rs.getString("column_name");
 	}
 }
