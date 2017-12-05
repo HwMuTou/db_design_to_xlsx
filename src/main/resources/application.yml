@@ -4,8 +4,10 @@ spring:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:mem:db_design_to_xlsx
-    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:db_design_to_xlsx
+#    driver-class-name: org.h2.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/test
+    driver-class-name: org.postgresql.Driver
   freemarker:
     template-loader-path: classpath:/templates/
   jpa:
